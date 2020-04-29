@@ -1,6 +1,8 @@
 import pytest
-import src.exercise
+from src.cube import Cube
 
 def test_exercise():
-    #implement tests here
-    assert 0 == 0
+    sand = Cube(3)
+
+    assert cube.volume() == 9
+    assert str(cube) == "The length of the edge is 3 and the volume 9"
