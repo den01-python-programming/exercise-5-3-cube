@@ -1,8 +1,11 @@
 import pytest
-from src.cube import Cube
+import os
 
 def test_exercise():
+    os.chdir('src')
+
+    from cube import Cube
     sand = Cube(3)
 
-    assert cube.volume() == 9
-    assert str(cube) == "The length of the edge is 3 and the volume 9"
+    assert sand.volume() == 27
+    assert str(sand) == "The length of the edge is 3 and the volume 27"
